@@ -7,6 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@RestController
+@EnableAutoConfiguration
 public class HellocdApplication {
 
 
@@ -14,18 +16,6 @@ public class HellocdApplication {
 	String home() {
 		return "Hello World!";
 	}
-
-	public static void main(String[] args) {
-		SpringApplication.run(HellocdApplication.class, args);
-	}
-
-}package com.example.hellocd;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class HellocdApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HellocdApplication.class, args);
